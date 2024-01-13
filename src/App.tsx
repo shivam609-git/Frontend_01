@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loader from "./components/loader";
 import Header from "./components/header";
+
 // import Home from "./pages/home";
 // import Search from "./pages/search";   //without using lazy function
 // import Cart from "./pages/cart";
@@ -10,7 +11,7 @@ import Header from "./components/header";
 const Home = lazy(() => import("./pages/home"));
 const Search = lazy(() => import("./pages/search"));
 const Cart = lazy(() => import("./pages/cart"));
-
+const Shipping = lazy(() => import("./pages/shipping"));
 // importing admin routes
 
 const Dashboard = lazy(() => import("./pages/admin/dashboard"));
@@ -43,6 +44,10 @@ const App = () => {
         <Route path="/search" element={<Search />} />
         <Route path="/cart" element={<Cart />} />
 
+        {/* Login User Route */}
+        <Route>
+        <Route path="/shipping" element={<Shipping />} />
+        </Route>
 
 
         {/*//Add Admin Route */}
