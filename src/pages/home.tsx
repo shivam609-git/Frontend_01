@@ -3,7 +3,7 @@ import ProductCard from "../components/productCard";
 
 const Home = () => {
 
-  const addToCart = () => {
+  const addToCartHandler = () => {
 
   };
 
@@ -18,7 +18,7 @@ const Home = () => {
       </h1>
 
       <main>
-       <ProductCard productId="temp1" name="mac" price={24000} stock={3} handler={addToCart} photo="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg"/>
+       <ProductCard productId="temp1" name="mac" price={24000} stock={3} handler={addToCartHandler} photo="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg"/>
       </main>
     </div>
   )
